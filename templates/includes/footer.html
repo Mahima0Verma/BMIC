@@ -75,7 +75,7 @@
                                     <div class="ho-ev-date"><span>07</span><span>jan,2020</span>
                                     </div>
                                     <div class="ho-ev-link">
-                                        <a href="events.html">
+                                        <a href="{% url 'notice' %}">
                                             <h4>New Admission</h4>
                                         </a>
                                         <p>Only one parent will report on given interaction date with registraton form duly filled and Nagar Nigam date if birth certificate for all classes<br>
@@ -96,16 +96,16 @@ Any incomplete registration form will be rejected
                     <div class="bot-gal h-gal ho-event-mob-bot-sp">
                         <h4>Photo Gallery</h4>
                         <ul>
-                            <li><img class="materialboxed" data-caption="Ford School & College" src="{% static 'images/ami/1.jpg' %}" alt=""></li>
-                            <li><img class="materialboxed" data-caption="Ford School & College" src="{% static 'images/ami/2.jpg' %}" alt=""></li>
-							<li><img class="materialboxed" data-caption="Ford School & College" src="{% static 'images/ami/3.jpg' %}" alt=""></li>
-							<li><img class="materialboxed" data-caption="Ford School & College" src="{% static 'images/ami/8.jpg' %}" alt=""></li>
-							<li><img class="materialboxed" data-caption="Ford School & College" src="{% static 'images/ami/9.jpg' %}" alt=""></li>
-							<li><img class="materialboxed" data-caption="Ford School & College" src="{% static 'images/ami/10.jpg' %}" alt=""></li>
+                            <li><img class="materialboxed" data-caption="Babu Mahadev Inter Collge " src="{% static 'images/ami/1.jpg' %}" alt=""></li>
+                            <li><img class="materialboxed" data-caption="Babu Mahadev Inter Collge " src="{% static 'images/ami/2.jpg' %}" alt=""></li>
+							<li><img class="materialboxed" data-caption="Babu Mahadev Inter Collge " src="{% static 'images/ami/3.jpg' %}" alt=""></li>
+							<li><img class="materialboxed" data-caption="Babu Mahadev Inter Collge " src="{% static 'images/ami/8.jpg' %}" alt=""></li>
+							<li><img class="materialboxed" data-caption="Babu Mahadev Inter Collge " src="{% static 'images/ami/9.jpg' %}" alt=""></li>
+							<li><img class="materialboxed" data-caption="Babu Mahadev Inter Collge " src="{% static 'images/ami/10.jpg' %}" alt=""></li>
 
-							<li><img class="materialboxed" data-caption="Ford School & College" src="{% static 'images/ami/12.jpg' %}" alt=""></li>
-							<li><img class="materialboxed" data-caption="Ford School & College" src="{% static 'images/ami/15.jpg' %}" alt=""></li>
-							<li><img class="materialboxed" data-caption="Ford School & College" src="{% static 'images/ami/14.jpg' %}" alt=""></li>
+							<li><img class="materialboxed" data-caption="Babu Mahadev Inter Collge " src="{% static 'images/ami/12.jpg' %}" alt=""></li>
+							<li><img class="materialboxed" data-caption="Babu Mahadev Inter Collge " src="{% static 'images/ami/15.jpg' %}" alt=""></li>
+							<li><img class="materialboxed" data-caption="Babu Mahadev Inter Collge " src="{% static 'images/ami/14.jpg' %}" alt=""></li>
 
                         </ul>
 						<br>
@@ -128,28 +128,27 @@ Any incomplete registration form will be rejected
                 <div class="col-md-6 foot-tc-mar-t-o">
                     <h4>Menu</h4>
                     <ul>
-                        <li><a href="#">Aim & Objective</a></li>
-                        <li><a href="#">list of holidays</a></li>
-                        <li><a href="#">School Uniforms</a></li>
-                        <li><a href="#">Facilities</a></li>
-                        <li><a href="#">Curriculum</a></li>
-                        <li><a href="#">Co-Curriculum Activities</a></li>
-                        <li><a href="#">Examination & Promotion</a></li>
-                        <li><a href="#">School Hours</a></li>
+                        <li><a href="{% url 'aim'%}">Aim & Objective</a></li>
+                        <li><a href="{% url 'holiday_list'%}">list of holidays</a></li>
+
+                        <li><a href="{% url 'facilities' %}">Facilities</a></li>
+                        <li><a href="{% url 'curriculum' %}">Curriculum</a></li>
+                        <li><a href="{% url 'co_curriculum' %}">Co-Curriculum Activities</a></li>
+                        <li><a href="{% url 'exam' %}">Examination & Promotion</a></li>
+
 
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <h4>&nbsp;</h4>
                     <ul>
-                        <li><a href="#">General Rules</a></li>
-                        <li><a href="#">Rules for Parents</a></li>
-                        <li><a href="#">Admission and Withdrawal</a></li>
-                        <li><a href="#">Library</a></li>
-                        <li><a href="#">Downloads</a></li>
-                        <li><a href="#">Faculity</a></li>
-                        <li><a href="#">Facilities</a></li>
-                        <li><a href="#">School Infrastructure</a></li>
+                        <li><a href="{% url 'rules'%}">General Rules</a></li>
+                        <li><a href="{% url 'rules' %}">Rules for Parents</a></li>
+                        <li><a href="{% url 'admission'%}">Admission and Withdrawal</a></li>
+
+                        <li><a href="{% url 'faculty' %}">Faculty</a></li>
+                        <li><a href="{% url 'facilities' %}">Facilities</a></li>
+                        <li><a href="{% url 'infrastructure' %}">School Infrastructure</a></li>
                     </ul>
                 </div>
 
