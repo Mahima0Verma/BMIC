@@ -1,0 +1,74 @@
+
+{% extends 'base.html'%}
+{% block content %}
+{% load static %}
+
+    <div class="search-top" style="padding:2px 0px">   </div>
+
+
+
+
+
+
+
+    <section  >
+        <div class="container com-sp pad-bot-70">
+            <div class="row">
+                <div class="con-title">
+                    <h2>Notice<span> List</span></h2>
+
+
+                </div>
+				<div class="row">
+			<div class="col-md-12">
+                    <div class="bot-gal h-blog ho-event">
+                        <h4>News & Event</h4>
+                        <div class="ho-event">
+                            <ul>
+                                <li>
+                                  {% if key1 %}
+                                  {% for i in key1 %}
+                                    <div class="ho-ev-date">{{i.name}}<br /> {{i.created_at}}<br/><span></span><span>{{i.year}}</span>
+                                    </div>
+                                    <div class="ho-ev-link" style="width:75%">
+
+
+                                    {{ i.notice }}
+
+                                    {% endfor %}
+                                    {% endif %}
+
+
+
+
+                                    </div>
+                                </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

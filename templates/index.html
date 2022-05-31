@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+         <section>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+			<div class="item slider1 active"><img src="{% static 'images/slider/flex.jpg' %}" alt=""></div>
+
+			<div class="item "><img src="{% static 'images/slider/patshala.jpg' %}" alt=""></div>
+
+                <div class="item" >
+
+                    <img src="{% static 'images/slider/home.jpg' %}" alt="">
+                    <div class="carousel-caption slider-con">
+                        <h2 style="color: black;">Babu Mahadev <span> Inter  College</span></h2>
+                        <p style="color: black;">The Aim of the school is to impart value based education to the people of the Barkachh Dubar Kalan  Mirzapur and India.</p>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{% static 'images/slider/2.jpg' %}" alt="">
+                    <div class="carousel-caption slider-con">
+                        <h2>Admission open <span>2022-2023</span></h2>
+                        <p style="font-size:16px"><strong>Nursery to IX & XI</strong></p>
+                        <a href="#" class="bann-btn-1">Admission</a><a href="#" class="bann-btn-2">Read More</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{% static 'images/slider/3.jpg' %}" alt="">
+                    <div class="carousel-caption slider-con">
+                        <h2>Education <span>Master</span></h2>
+                        <p>The Aim of the school is to impart value based education to the people of the Barkachh Duar Kalan
+                           and India.</p>
+                        <a href="#" class="bann-btn-1">All Courses</a><a href="#" class="bann-btn-2">Read More</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <i class="fa fa-chevron-left slider-arr"></i>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <i class="fa fa-chevron-right slider-arr"></i>
+            </a>
+        </div>
+    </section>
+
+
+
+<section >
+        <div class="container com-sp pad-bot-70">
+            <div class="row">
+                <div class="con-title">
+                    <h2>Welcome to  <span>Babu Mahadev Inter College</span></h2>
+
+
+                </div>
+				<div class="udb-sec udb-prof" style="margin-bottom:0px; text-align:justify">
+                         <div class="mm1-com25 mm1-s1"><a class="course-overlay" href="#">
+                                                            <img src="{% static 'images/logo.png' %}" alt="" style="width:200px"></a></div>
+						 <div class="mm1-com75 mm1-s1">
+                            <p style="padding:10px">
+                              Education not only breeds confidence but also harnesses hope and is the panacea for everlasting peace. Today, the world faces a `crisis of survival’ more than ever before and it is my firm belief that education is the only weapon through which humanity can overcome this crisis.
+
+We need to change the present system to adapt to our changing times. Education needs to be broadened in its horizon and not be limited to the classroom. We should make a concerted effort to make education more humane and accommodating.
+											The Babu Mahadev Inter College  has  been founded by the  Mr. Bhai Lal Kol (M.L.A of Chhanbey vidhansabha Mirzapur). The purpose of school is to impart the value education among the rural area children. The main motive of the school is to develop the overall personality of a child through many extra curricular activities.
+                    We focus on the overall development of a child instead of giving only bookish knowledge. </p
+						</div>
+
+	<div class="mm1-com75 mm1-s1">
+	<h4>Medium of Instruction</h4>
+                            <p style="padding:10px">
+							The medium of instruction Hindi </p>
+
+<p style="padding:10px">
+Babu Mahadev Inter College  is Affiliated from UP Booard  till Secondary Level
+
+</p>
+						</div>
+                        </div>
+            </div>
+
+        </div>
+    </section>
+
+{% endblock %}

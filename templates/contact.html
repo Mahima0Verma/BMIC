@@ -1,0 +1,158 @@
+
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+    <div class="search-top" style="padding:2px 0px">   </div>
+
+
+
+<section>
+
+        <div class="container com-sp pad-bot-70">
+
+            <div class="row">
+
+                <div class="cor about-sp">
+
+                    <div class="ed-about-tit">
+
+                        <div class="con-title">
+
+                            <h2>Contact <span> Us</span></h2>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="pg-contact">
+
+
+
+
+
+						  <div class="col-md-4 col-sm-6 col-xs-12 new-con new-con1"> <img src="img/contact/1.html" alt="">
+
+                            <h4>Address</h4>
+
+                            <p><strong>Babu Mahadev Inter College </strong>  <br>Jhelampur Barkachh Dubar Kalan Mirzapur<br> Uttar Pradesh - 2313001
+</p>
+
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12 new-con new-con3"> <img src="{% static 'img/contact/2.html' %}" alt="">
+
+                            <h4>CONTACT INFO:</h4>
+
+                          <a href="tel://0099999999" class="contact-icon">Contact No. : 8545812194, 8009743516, 9918805807</a>
+
+
+
+								<br> <a href="mailto:mytestmail@gmail.com" class="contact-icon">Email: babumahadevintercollege@gmail.com
+
+                                <br> <a href="mailto:mytestmail@gmail.com" class="contact-icon">Email: babumahadevintercollege@gmail.com</a>
+
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12 new-con new-con4"> <img src="img/contact/3.html" alt="">
+
+                            <h4>Website</h4>
+
+                            <p> <a href="#">Website: www.bmic.co.in</a>
+
+                                <br> <a href="#">Facebook: www.facebook/bmic</a>
+
+                                 </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+	<section id="map">
+
+        <div class="row contact-map">
+
+            <!-- IFRAME: GET YOUR LOCATION FROM GOOGLE MAP -->
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.105277344453!2d82.40724331419162!3d24.928483248668908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398f903f6f2147eb%3A0x688c50b72866b2a!2sBabu%20Mahadev%20Inter%20College%20Jhelampur%2CBarkachh%2CDubar%20Kalan%2CLalganj%2CMirzapur!5e0!3m2!1sen!2sin!4v1653962993975!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+                allowfullscreen=""></iframe>
+
+            <div class="container">
+
+                <div class="overlay-contact footer-part footer-part-form">
+
+                    <div class="map-head">
+
+                        <p>Send Us Now</p>
+
+                        <h2>Get In Touch</h2> <span class="footer-ser-re">Service Request Form</span> </div>
+
+                    <!-- ENQUIRY FORM -->
+
+                    <form  action="{% url 'contact' %}" method="POST">
+                      {% include 'includes/messages.html' %}
+                       {% csrf_token %}
+
+                        <ul>
+
+                            <li class="col-md-6 col-sm-6 col-xs-12 contact-input-spac">
+
+                                <input type="text" id="f1" value="" name="name" placeholder="Name" required=""> </li>
+
+                            <li class="col-md-6 col-sm-6 col-xs-12 contact-input-spac">
+
+                                <input type="text" id="f2" value="" name="phone" placeholder="Phone" required=""> </li>
+
+                            <li class="col-md-6 col-sm-6 col-xs-12 contact-input-spac">
+
+                                <input type="email" id="f3" value="" name="email" placeholder="Emai" required=""> </li>
+
+                            <li class="col-md-6 col-sm-6 col-xs-12 contact-input-spac">
+
+                                <input type="text" id="f4" value="" name="subject" placeholder="subject" required=""> </li>
+
+                            <li class="col-md-12 col-sm-12 col-xs-12 contact-input-spac">
+
+                                <textarea id="f5" name="message" required=""></textarea>
+
+                            </li>
+
+                            <li class="col-md-6">
+
+                                <input type="submit" value="SUBMIT"> </li>
+
+                        </ul>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
